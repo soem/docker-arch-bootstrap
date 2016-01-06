@@ -1,5 +1,5 @@
 FROM busybox
-RUN wget http://archlinux.cs.nctu.edu.tw/iso/2015.12.01/archlinux-bootstrap-2015.12.01-x86_64.tar.gz -O - | tar -zx && \
+RUN wget http://archlinux.cs.nctu.edu.tw/iso/2016.01.01/archlinux-bootstrap-2016.01.01-x86_64.tar.gz -O - | tar -zx && \
     cp -a /root.x86_64/* . || rm -rf /root.x86_64 && \
     ln -s /usr/bin/bash /bin/bash
 
