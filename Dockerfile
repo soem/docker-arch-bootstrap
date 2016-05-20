@@ -1,5 +1,5 @@
 FROM alpine
-RUN wget http://archlinux.cs.nctu.edu.tw/iso/2016.02.01/archlinux-bootstrap-2016.02.01-x86_64.tar.gz -O - | tar -zx && \
+RUN wget http://archlinux.cs.nctu.edu.tw/iso/2016.05.01/archlinux-bootstrap-2016.05.01-x86_64.tar.gz -O - | tar -zx && \
     cp -a /root.x86_64/* . || rm -rf /root.x86_64 && \
     ln -s /usr/bin/bash /bin/bash
 
